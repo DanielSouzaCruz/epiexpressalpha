@@ -1,4 +1,6 @@
+
 package modelo;
+
 
 public class Equipamento {
     private int codEquipamento;
@@ -52,8 +54,9 @@ public class Equipamento {
 
     @Override
     public String toString() {
-        return "Equipamento{" + "codEquipamento=" + codEquipamento + ", nome=" + nome + ", ca=" + ca + ", quantidade=" + quantidade + ", codigo do usuario = " + usuario.getCodUsuario()+ ", nome do usuario = " + usuario.getNome()+ '}';
+        return "Equipamento{" + "codEquipamento=" + codEquipamento + ", nome=" + nome + ", ca=" + ca + ", quantidade=" + quantidade + ", usuario=" + usuario.getNome() + '}';
     }
-
+    
+    
     
 }

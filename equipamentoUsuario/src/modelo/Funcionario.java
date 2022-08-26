@@ -2,7 +2,7 @@
 package modelo;
 
 public class Funcionario {
-  private int id;
+  private int codFuncionario;
     private String nome;
     private String cpf;
     private int idSetor;
@@ -12,8 +12,8 @@ public class Funcionario {
     public Funcionario() {
     }
 
-    public Funcionario(int id, String nome, String cpf, int idSetor,int idFuncao, Empresa empresa) {
-        this.id = id;
+    public Funcionario(int codFuncionario, String nome, String cpf, int idSetor,int idFuncao, Empresa empresa) {
+        this.codFuncionario = codFuncionario;
         this.nome = nome;
         this.cpf = cpf;
         this.idSetor = idSetor;
@@ -22,7 +22,7 @@ public class Funcionario {
     }
 
     public String getCpf() {
-        return cpf;
+        return this.cpf;
     }
 
     public void setCpf(String cpf) {
@@ -30,27 +30,27 @@ public class Funcionario {
     }
 
     public Empresa getEmpresa() {
-        return empresa;
+        return this.empresa;
     }
 
-    public int getId() {
-        return id;
+    public int getCodFuncionario() {
+        return this.codFuncionario;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCodFuncionario(int id) {
+        this.codFuncionario = id;
     }
 
     public int getIdSetor() {
-        return idSetor;
+        return this.idSetor;
     }
 
     public int getIdFuncao() {
-        return idFuncao;
+        return this.idFuncao;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -59,7 +59,8 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario{" + "id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", idSetor=" + idSetor + ", idFuncao=" + idFuncao + ", empresa=" + empresa + '}';
+        return "Funcionario{" + "codFuncionario=" + codFuncionario + ", nome=" + nome + ", cpf=" + cpf + ", idSetor=" + idSetor + ", idFuncao=" + idFuncao + ", empresa=" + empresa + '}';
     }
-      
+
+    
 }

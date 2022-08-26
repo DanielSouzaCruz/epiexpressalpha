@@ -3,7 +3,7 @@ package modelo;
 
 
 public class Empresa {
-    private int id;
+    private int codEmpresa;
     private String nome;
     private String cnpj;
     private String email;
@@ -12,8 +12,8 @@ public class Empresa {
     public Empresa() {
     }
 
-    public Empresa(int id, String nome, String cnpj, String email, String telefone) {
-        this.id = id;
+    public Empresa(int codEmpresa, String nome, String cnpj, String email, String telefone) {
+        this.codEmpresa = codEmpresa;
         this.nome = nome;
         this.cnpj = cnpj;
         this.email = email;
@@ -21,7 +21,7 @@ public class Empresa {
     }
 
     public String getCnpj() {
-        return cnpj;
+        return this.cnpj;
     }
 
     public void setCnpj(String cnpj) {
@@ -29,19 +29,19 @@ public class Empresa {
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public int getId() {
-        return id;
+    public int getCodEmpresa() {
+        return this.codEmpresa;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -49,7 +49,7 @@ public class Empresa {
     }
 
     public String getTelefone() {
-        return telefone;
+        return this.telefone;
     }
 
     public void setTelefone(String telefone) {
@@ -58,6 +58,8 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return "Empresa{" + "id=" + id + ", nome=" + nome + ", cnpj=" + cnpj + '}';
+        return "Empresa{" + "codEmpresa=" + codEmpresa + ", nome=" + nome + ", cnpj=" + cnpj + ", email=" + email + ", telefone=" + telefone + '}';
     }
+
+    
 }
