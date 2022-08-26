@@ -37,10 +37,6 @@ public class Funcionario {
         return this.codFuncionario;
     }
 
-    public void setCodFuncionario(int id) {
-        this.codFuncionario = id;
-    }
-
     public int getIdSetor() {
         return this.idSetor;
     }
